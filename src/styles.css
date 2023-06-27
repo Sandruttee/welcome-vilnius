@@ -7,6 +7,16 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+main {
+  background-color: white;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/hero.jpg");
@@ -21,6 +31,10 @@ header {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
+}
+
+main .grid {
+  grid-template-columns: 1fr 1fr;
 }
 
 header h1 {
@@ -73,6 +87,17 @@ header a {
   header h3 {
     font-size: 12px;
   }
+  main .grid,
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
+  }
+  .img-resp {
+    margin-top: 0;
+  }
 }
 
 footer {
@@ -108,4 +133,27 @@ footer h4 {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: gray;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.img-resp {
+  max-width: 100%;
+  margin-top: 40px;
 }
