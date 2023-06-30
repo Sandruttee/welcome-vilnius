@@ -9,9 +9,9 @@ body {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
 }
 
 main {
@@ -31,6 +31,42 @@ header {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
+}
+
+.grid-3-columns {
+  display: grid;
+  grid-gap: 64px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background-color: white;
+  margin: 30px 0;
+  text-align: center;
+}
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
 }
 
 main .grid {
@@ -156,4 +192,16 @@ main h3 {
 .img-resp {
   max-width: 100%;
   margin-top: 40px;
+}
+
+.img-size {
+  max-width: 150px;
+}
+
+.cafes-section {
+  background-color: #f8f8f8;
+}
+
+.text-center {
+  text-align: center;
 }
