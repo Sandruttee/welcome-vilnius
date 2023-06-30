@@ -124,7 +124,8 @@ header a {
     font-size: 12px;
   }
   main .grid,
-  .grid {
+  .grid,
+  .grid-3-columns {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
