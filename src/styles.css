@@ -190,13 +190,10 @@ main h3 {
   margin: 0;
 }
 
-.img-resp {
-  max-width: 100%;
-  margin-top: 40px;
-}
+.img-res {
+  width: 100%;
 
-.img-size {
-  max-width: 150px;
+  aspect-ratio: 1 /1;
 }
 
 .cafes-section {
@@ -205,4 +202,13 @@ main h3 {
 
 .text-center {
   text-align: center;
+}
+
+.grid-cafe-maps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
 }
