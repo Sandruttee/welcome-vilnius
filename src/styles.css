@@ -67,6 +67,7 @@ main h5 {
   text-transform: uppercase;
   padding: 16px;
   background-color: #996744;
+  text-decoration: none;
 }
 
 main .grid {
@@ -116,7 +117,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding: 100px;
 }
 
 footer ul,
@@ -212,7 +212,9 @@ main h3 {
   .text-center {
     margin-bottom: 20px;
   }
-  p {
+  p,
+  ul,
+  h4 {
     text-align: center;
   }
   main .grid,
