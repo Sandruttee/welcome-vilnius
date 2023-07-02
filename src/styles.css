@@ -110,33 +110,6 @@ header a {
   background: white;
 }
 
-@media (max-width: 800px) {
-  header {
-    padding: 60px 0;
-  }
-  header h1 {
-    font-size: 48px;
-  }
-  header h2 {
-    font-size: 20px;
-  }
-  header h3 {
-    font-size: 12px;
-  }
-  main .grid,
-  .grid,
-  .grid-3-columns {
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
-  }
-  section {
-    padding: 30px;
-  }
-  .img-resp {
-    margin-top: 0;
-  }
-}
-
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
     url("../images/footer.jpg");
@@ -192,8 +165,10 @@ main h3 {
 
 .img-res {
   width: 100%;
-
-  aspect-ratio: 1 /1;
+  aspect-ratio: 1/1;
+}
+.main-img {
+  aspect-ratio: 3/2;
 }
 
 .cafes-section {
@@ -211,4 +186,44 @@ main h3 {
 .embed {
   width: 100%;
   aspect-ratio: 1 /1;
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
+  main h2,
+  h3,
+  p {
+    text-align: center;
+  }
+  main .grid,
+  .grid,
+  .grid-3-columns,
+  .grid-cafe-maps {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
+  }
+  .img-res {
+    margin-top: 0;
+  }
+  .cafes-section .img-res {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
 }
